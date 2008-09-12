@@ -1,0 +1,39 @@
+/****************************************************************************
+
+
+about.RC
+
+produced by Borland Resource Workshop
+
+
+*****************************************************************************/
+#include "aboutcon.inc"
+
+
+ID_ABOUTDIALOG DIALOG 0, 0, 229, 170
+EXSTYLE WS_EX_DLGMODALFRAME | WS_EX_TOOLWINDOW
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | 0x200L | WS_OVERLAPPED | WS_VISIBLE | WS_CAPTION
+CAPTION "All copyrights are owned by Leonid Maslov."
+FONT 8, "MS Sans Serif"
+{
+ CONTROL "ABOUT", ID_ABOUT_BITMAP, "static", SS_ICON | SS_CENTERIMAGE | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE | WS_BORDER, 2, 2, 60, 60
+ CONTROL "This tool is to open-close your Cd-Rom. (It places itself in the systray, registers some hotkeys, and you can use them to open-close Cd-Rom even if the application does not have an input focus.You can simply prese keys and Cd-Rom will open or close. It also has dropdown menu and configuration tool. ", IDC_STATICTEXT1, "static", SS_CENTER | WS_CHILD | WS_VISIBLE, 64, 4, 164, 52
+ CONTROL "IT IS VERY EASY TO USE! :-)", IDC_STATICTEXT2, "static", SS_LEFT | WS_CHILD | WS_VISIBLE, 76, 56, 116, 14
+ CONTROL "This tool is developed by Leonid Maslov. You can contact me by :", IDC_STATICTEXT3, "static", SS_LEFT | WS_CHILD | WS_VISIBLE, 4, 66, 146, 17
+ CONTROL "LeonidMs@inbox.lv", ID_ADRESS_TEXT, "static", SS_LEFT | WS_CHILD | WS_VISIBLE, 71, 74, 72, 13
+ CONTROL "*********************************************************************************", IDC_STATICTEXT5, "static", SS_LEFT | WS_CHILD | WS_VISIBLE, 4, 84, 232, 9
+ CONTROL "HINT:", IDC_STATICTEXT6, "static", SS_LEFT | WS_CHILD | WS_VISIBLE, 76, 92, 32, 13
+ CONTROL "You need to reenter your restart option every time you change your configuration.Because it makes the CdTool restartable.", IDC_STATICTEXT8, "static", SS_LEFT | WS_CHILD | WS_VISIBLE, 4, 100, 226, 16
+ CONTROL "THANKS:", IDC_STATICTEXT9, "static", SS_LEFT | WS_CHILD | WS_VISIBLE, 76, 117, 48, 10
+ CONTROL "Big thanks to author of ' WWW.PASCAL.TIMES.LV ' for fixing some bugs and improving some features!", IDC_STATICTEXT10, "static", SS_LEFT | WS_CHILD | WS_VISIBLE, 4, 127, 222, 17
+ CONTROL "&OK", ID_ABOUT_OK, "button", BS_DEFPUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 87, 147, 54, 18
+}
+
+
+
+
+
+
+
+
+
