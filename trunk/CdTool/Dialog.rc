@@ -1,0 +1,47 @@
+/****************************************************************************
+
+
+Dialog.rc
+
+produced by Borland Resource Workshop
+
+
+*****************************************************************************/
+
+#include "consts.inc"
+
+MYPOPUP MENU 
+{
+ POPUP "&Popup"
+ {
+  MENUITEM "&About", id_MAbout
+  MENUITEM SEPARATOR
+  MENUITEM "&Configure", id_MConfig
+  MENUITEM SEPARATOR
+  MENUITEM "Restart with Windows (Use this)", id_MAutoY
+  MENUITEM "Don't restart with Windows", id_MAutoN
+  MENUITEM SEPARATOR
+  MENUITEM "", id_MOpen
+  MENUITEM "", id_MClose
+  MENUITEM SEPARATOR
+  MENUITEM "", id_MExit
+ }
+
+}
+
+
+CDTOOL DIALOG 0, 0, 115, 52
+EXSTYLE WS_EX_TOPMOST | WS_EX_CONTEXTHELP | WS_EX_TOOLWINDOW
+STYLE DS_SYSMODAL | DS_3DLOOK | DS_CENTER | DS_CONTEXTHELP | WS_OVERLAPPED | WS_MINIMIZE | WS_CAPTION
+CAPTION "CdTool"
+FONT 8, "MS Sans Serif"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+{
+ CONTROL "&Open CdRom", id_CDOpen, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 5, 4, 50, 20
+ CONTROL "&Close CdRom", id_CDClose, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 5, 27, 50, 20
+ CONTROL "&Minimize", id_Close, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 60, 4, 50, 43
+ CONTROL "", id_Advanced, "STATIC", SS_ETCHEDFRAME | SS_SUNKEN | WS_CHILD | WS_VISIBLE, 0, 1, 115, 50
+}
+
+
+

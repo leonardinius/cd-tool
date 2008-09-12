@@ -1,0 +1,9 @@
+del *.dcu
+del *.~*
+del *.res
+C:\progra~1\borland\delphi5\bin\brcc32.exe   about.rc
+C:\progra~1\borland\delphi5\bin\brcc32.exe  cdtool.rc
+C:\progra~1\borland\delphi5\bin\brcc32.exe  dialog.rc
+C:\progra~1\borland\delphi5\bin\dcc32.exe   CdTool.dpr
+del *.dcu
+del *.res

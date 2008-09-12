@@ -1,0 +1,19 @@
+# include "conconsts.inc"
+CONFIQ DIALOG 0, 0, 260, 183
+STYLE DS_3DLOOK | DS_CENTER | WS_OVERLAPPED | WS_VISIBLE | WS_CAPTION | WS_MINIMIZEBOX
+CAPTION "CdTool configure dialog"
+FONT 8, "MS Sans Serif"
+{
+ CONTROL "ALT PGUP", ID_OPEN_EDIT, "edit", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 4, 88, 132, 13
+ CONTROL "ALT PGDWN", ID_CLOSE_EDIT, "edit", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 4, 111, 132, 13
+ CONTROL "ALT CTRL  X", ID_EXITAPP_EDIT, "edit", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 4, 135, 132, 13
+ CONTROL "Which restart key do you prefer?", IDC_GROUPBOX1, "button", BS_GROUPBOX | WS_CHILD | WS_VISIBLE | WS_GROUP, 140, 84, 112, 65
+ CONTROL "&Current User", ID_USER_RADIO, "button", BS_AUTORADIOBUTTON | BS_BOTTOM | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 156, 96, 55, 14
+ CONTROL "&Local Machine", ID_MACHINE_RADIO, "button", BS_AUTORADIOBUTTON | BS_BOTTOM | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 156, 124, 60, 14
+ CONTROL "Frame1", IDC_STATICFRAME1, "static", SS_ETCHEDFRAME | WS_CHILD | WS_VISIBLE, 4, 155, 248, 25
+ CONTROL "&Apply", ID_APPLY_BUTTON, "button", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 159, 50, 17
+ CONTROL "&HOW TO...", ID_HOW_TO, "button", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 100, 159, 50, 17
+ CONTROL "&Cancel", ID_CANCEL_BUTTON, "button", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 172, 159, 50, 17
+ CONTROL "Write here shortcuts your want to use in the application!!! The 1st one: to open Cd, the 2nd one to close it, the 3rd one ,final, to exit the CdTool application.See HELP box(HOW TO button). Do not write similar strings in different edits or write some equally words in the same edit.", ID_LABEL3, "static", SS_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER, 2, 4, 256, 72, WS_EX_STATICEDGE | WS_EX_CLIENTEDGE
+ CONTROL " WARNING!!!  The shorcuts you see in edits are not your current shortcuts. You are not able to see your current shortcuts here!!! You can can look in registry by yourself and then .. if you know virtual code of buttons, you can see your current shortcuts  after some arihmetic operations :-)", 105, "static", SS_LEFT | WS_CHILD | WS_VISIBLE, 4, 40, 250, 32
+}
